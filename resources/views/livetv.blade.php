@@ -27,7 +27,7 @@
 
 
 	@section('content')
-		<div class="container" style="padding: 100px 50px; box-sizing: border-box;" >
-		 	<iframe  style="width: 85vw; height:60vh;"src="https://www.youtube.com/embed/BbDF_GXBmGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div  class="container y-frame" style="padding: 100px 0px; box-sizing: border-box;" >
+		 	<iframe  class="embed-responsive" style="height: 450px;" src="https://www.youtube.com/embed/BbDF_GXBmGc?rel=0&controls=1&showinfo=0&autoplay=1&modestbranding=1" frameborder="0"  allowfullscreen></iframe>
 		</div>
 	@endsection

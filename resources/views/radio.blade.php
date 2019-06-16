@@ -30,14 +30,12 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
           <div class="col-md-7 order-md-last ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Explore our radio </h1>
-            <p> </p>
-          </div>
-          <div class="col-md-5 order-md-last ftco-animate mt-5" data-scrollax=" " class="btn btn-black py-3 px-4">
-              <h1>Listen live :)</h1>
-              <p><audio preload="none" controls id="audio1">
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Listen live</h1>
+            <p><audio preload="none" controls id="audio1">
               <source src="http://listen.radionomy.com/powerofworshipradio" type="audio/mpeg" />
             </audio></p>
+          </div>
+          <div class="col-md-5 order-md-last ftco-animate mt-5" data-scrollax=" " class="btn btn-black py-3 px-4">
           </div>
          
         </div>

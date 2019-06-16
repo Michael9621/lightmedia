@@ -30,7 +30,7 @@
   <body>
 
     <!--START NAV-->
-	  @yield('nav_content')
+    @yield('nav_content')
     <!-- END nav -->
     
     @yield('content')
@@ -66,14 +66,14 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Reach us</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">Jewel Complex, opposite TRM 6th Floor</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@mwangazamedia.com</span></a></li>
-	              </ul>
-	            </div>
+              <h2 class="ftco-heading-2">Reach us</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon icon-map-marker"></span><span class="text">Jewel Complex, opposite TRM 6th Floor</span></li>
+                  <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@mwangazamedia.com</span></a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
