@@ -25,9 +25,9 @@
 	@endsection
 
 	@section('content')
-		<div class="hero-wrap" style="background-image: url('images/studio.jpg');" data-stellar-background-ratio="0.5">
-		 <div style="	background: -webkit-linear-gradient(top, rgba(34,50,188,0.4) 0%, rgba(34,50,188,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(34,50,188,0.4) 0%, rgba(34,50,188,0.2) 100%);">
+		<div class="hero-wrap" style="background-image: url('images/tv.jpg');" data-stellar-background-ratio="0.5">
+		 <div style="	background: -webkit-linear-gradient(top, rgba(34,50,188,0.1) 0%, rgba(34,50,188,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(34,50,188,0.2) 0%, rgba(34,50,188,0.2) 100%);">
 	      <div class="overlay" style=""></div>
 		      <div class="container">
 		        <div class="row no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
@@ -36,7 +36,7 @@
 		          </div>
 		          <div class="col-md=1 d-none d-md-block">
 		            <div class="play-video pb-5 d-flex align-items-center">
-		              <p><a href="https://vimeo.com/45830194" class="popup-vimeo"><span class="icon"><i class="ion-ios-play "></i></span> <span class="play">Play video</span></a></p>
+		              <p><a href="#" class="popup-vimeo"><span class="icon"><i class="ion-ios-play "></i></span> <span class="play">Play video</span></a></p>
 		            </div>
 		          </div>
 		        </div>
