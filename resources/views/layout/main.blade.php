@@ -41,11 +41,7 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Mwangaza Media.</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
+
             </div>
           </div>
          
@@ -56,10 +52,20 @@
                 <li><a href="{{ route('home') }}" class="py-2 d-block">Home</a></li>
                 <li><a href="{{ route('tv') }}" class="py-2 d-block">T.V</a></li>
                 <li><a href="{{ route('radio') }}" class="py-2 d-block">Radio</a></li>
+                <li><a href="{{ route('news') }}" class="py-2 d-block">E-news</a></li>
+                
+              </ul>
+            </div>
+          </div>
+           <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
                 <li><a href="{{ route('about') }}" class="py-2 d-block">About us</a></li>
                 <li><a href="{{ route('csr') }}" class="py-2 d-block">social responsibility</a></li>
                 <li><a href="{{ route('careers') }}" class="py-2 d-block">Careers</a></li>
                 <li><a href="{{ route('contact') }}" class="py-2 d-block">Contact us</a></li>
+                
               </ul>
             </div>
           </div>
@@ -76,6 +82,15 @@
             </div>
           </div>
         </div>
+         <div class="ftco-footer-widget">
+          <ul class="ftco-footer-social list-unstyled text-center mt-5">
+            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+            <li class="ftco-animate"><a href="#"><span class="icon-youtube"></span></a></li>
+          </ul>
+          </div>
+
         <div class="row">
           <div class="col-md-12 text-center">
 

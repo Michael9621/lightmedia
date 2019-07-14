@@ -9766,5 +9766,21 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 
 }
 
+.change{
+  padding:0 !important;
+}
 
+.checkout_v{
+  
+  color: #ffffff !important;
+}
+.checkout_v h2{
+  color: #ffffff !important;
+}
+.checkout{
+  padding: 40px 20px;
+  margin-top:180px;
+}
 
+  
+}
