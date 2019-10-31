@@ -39,8 +39,8 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Mwangaza Media.</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h2 class="ftco-heading-2">Mwangaza wa Neno Media.</h2>
+              <p>Mwanganza wa Neno is a media group that exists soely to spread the word of God to all</p>
 
             </div>
           </div>
@@ -82,23 +82,34 @@
             </div>
           </div>
         </div>
-         <div class="ftco-footer-widget">
-          <ul class="ftco-footer-social list-unstyled text-center mt-5">
-            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-            <li class="ftco-animate"><a href="#"><span class="icon-youtube"></span></a></li>
-          </ul>
-          </div>
+          <!--<div class="ftco-footer-widget">
+            <ul class="ftco-footer-social list-unstyled text-center mt-5">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-youtube"></span></a></li>
+            </ul>
+          </div>-->
 
         <div class="row">
-          <div class="col-md-12 text-center">
+          <div class="col-md-6">
 
-            <p>
-   <a href="#" >Designed by Kevo </a> &copy; <script>document.write(new Date().getFullYear());</script>  
-  </p>
+            <p class="p-4">
+              <a href="#" >Designed by Kevo </a> &copy; <script>document.write(new Date().getFullYear());</script>  
+             </p>
+          </div>
+          <div class="col-md-6">
+            <div class="ftco-footer-widget">
+            <p><ul class="ftco-footer-social list-unstyled text-center">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-youtube"></span></a></li>
+            </ul></p>
+          </div>
           </div>
         </div>
+
       </div>
     </footer>
     

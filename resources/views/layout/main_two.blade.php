@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="{{ asset ('assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset ('assets/vendor/charts/c3charts/c3.css') }}">
     <link rel="stylesheet" href="{{ asset ('assets/vendor/fonts/flag-icon-css/flag-icon.min.css') }}">
+    <link rel="stylesheet" href="{{ asset ('assets/vendor/datepicker/tempusdominus-bootstrap-4.css') }}" />
+    <link rel="stylesheet" href="{{ asset ('assets/vendor/summernote/css/summernote-bs4.css') }}">
     <title>Mwangaza Media - Admin</title>
 </head>
 
@@ -164,6 +166,7 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="{{ route('view_about') }}">View about us<span class="badge badge-secondary">New</span></a>
                                         </li>
+                                        
                                         <li class="nav-item">
                                             <a class="nav-link" href="{{ route('create_about') }}">Create about us</a>
                                         </li>
@@ -172,82 +175,55 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fa fa-fw fa-rocket"></i>church roles</a>
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fa fa-fw fa-rocket"></i>contacts</a>
                                 <div id="submenu-3" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="members.html">View roles<span class="badge badge-secondary">New</span></a>
+                                            <a class="nav-link" href="{{ route('view_contact') }}">View contacts<span class="badge badge-secondary">New</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="create_member.html">Create a new role</a>
+                                            <a class="nav-link" href="{{ route('create_contact') }}">Create contacts</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fa fa-fw fa-rocket"></i>Prayer cells</a>
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fa fa-fw fa-rocket"></i>Careers</a>
                                 <div id="submenu-4" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="members.html">View prayer cells<span class="badge badge-secondary">New</span></a>
+                                            <a class="nav-link" href="{{ route('view_careers') }}">View careers<span class="badge badge-secondary">New</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="create_member.html">Create a new prayer cell</a>
+                                            <a class="nav-link" href="{{ route('create_career') }}">Create careers</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
+                            <li class="nav-divider">
+                                csr blog
+                            </li>
+
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fa fa-fw fa-rocket"></i>Announcements</a>
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fa fa-fw fa-rocket"></i>csr blog</a>
                                 <div id="submenu-5" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="members.html">View announcements<span class="badge badge-secondary">New</span></a>
+                                            <a class="nav-link" href="{{ route('view_csr') }}">view csr blog<span class="badge badge-secondary">New</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="create_member.html">Create a new announcement</a>
+                                            <a class="nav-link" href="{{ route('create_csr') }}">create csr blog</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
-                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"><i class="fa fa-fw fa-rocket"></i>Events</a>
-                                <div id="submenu-7" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="members.html">View events<span class="badge badge-secondary">New</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="create_member.html">Create a new event</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"><i class="fa fa-fw fa-rocket"></i>Site settings</a>
-                                <div id="submenu-6" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="members.html">View events<span class="badge badge-secondary">New</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="create_member.html">Create a new event</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
                             
-                            <li class="nav-divider">
-                                Blog
-                            </li>
+                            
 
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#"><i class="fa fa-fw fa-user-circle"></i>Comming soon</a>
-                            </li>
+                            
 
                         </ul>
                     </div>
@@ -286,6 +262,11 @@
     <script src="{{ asset ('assets/vendor/slimscroll/jquery.slimscroll.js') }}"></script>
     <!-- main js -->
     <script src="{{ asset ('assets/libs/js/main-js.js') }}"></script>
+
+    <script src="{{ asset ('assets/vendor/datepicker/moment.js') }}"></script>
+    <script src="{{ asset ('assets/vendor/datepicker/tempusdominus-bootstrap-4.js') }}"></script>
+    <script src="{{ asset ('assets/vendor/datepicker/datepicker.js') }}"></script>
+
     <!-- chart chartist js -->
     <script src="{{ asset ('assets/vendor/charts/chartist-bundle/chartist.min.js') }}"></script>
     <!-- sparkline js -->
@@ -298,6 +279,16 @@
     <script src="{{ asset ('assets/vendor/charts/c3charts/d3-5.4.0.min.js') }}"></script>
     <script src="{{ asset ('assets/vendor/charts/c3charts/C3chartjs.js') }}"></script>
     <script src="{{ asset ('assets/libs/js/dashboard-ecommerce.js') }}"></script>
+    <script src="{{ asset ('assets/vendor/summernote/js/summernote-bs4.js') }}"></script>
+     <script>
+        $(document).ready(function() {
+            $('#summernote').summernote({
+                height: 300
+
+            });
+        });
+    </script>
+    
 </body>
  
 </html>

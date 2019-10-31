@@ -44,60 +44,29 @@
 	      </div>
 	    </div>
 
-	    <div class="sermons-content-area sermons-p">
-	        <div class="container-fluid">
-	            <div class="col-12">
-	                <div class=" heading-section text-center ftco-animate">
-	                  <h2 class="mb-4">Check us out</h2>
-	                </div>
-	                <div class="row">
+	       <div class="sermons-content-area sermons-p">
+        <div class="container">
+            <div class="col-12">
+                <div class=" heading-section text-center ftco-animate">
+                  <h2 class="mb-4">check us out</h2>
+                </div>
+                
+                <div class="row">  
+                	<div class="col-md-6">
+		                <div class="sermons-text text-center banner" style="background-image: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?'); height:300px;">
+		                </div>
+	            	</div>
+	            	<div class="col-md-6">
+		                <div class="sermons-text text-center banner "  style="background-image: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?'); height:300px ;">
+		                </div>
+	            	</div>
+                </div>
+                     
+            </div>   
+        </div>
+        
+    </div>
 
-	                  <div style="background-image: url('images/tv.jpg'); background-size: cover; padding:0;"class="col-md-6 d-flex checkout_v">      
-		                    <div style="	background: -webkit-linear-gradient(top, rgba(34,50,188,0.7) 0%, rgba(34,50,188,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-		                    background: linear-gradient(to bottom, rgba(34,50,188,0.9) 0%, rgba(34,50,188,0.2) 100%);  width:100%;">
-
-								<div class=" checkout text-center">
-			                        <h2>Mwangaza T.V</h2>
-			                      
-			                        <p class="text-center"><a href="{{ route('radio')}}" class="btn btn-black py-3 px-4">Watch</a></p>
-		                    	</div>
-		                       
-		                    </div>
-	                  </div>
-	                  
-
-	                  <div style="background-image: url('images/radio.jpg'); background-size: cover; padding:0"class=" col-md-6  d-flex checkout_v">      
-		                    <div style="	background: -webkit-linear-gradient(top, rgba(34,50,188,0.7) 0%, rgba(34,50,188,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-		                    background: linear-gradient(to bottom, rgba(34,50,188,0.9) 0%, rgba(34,50,188,0.2) 100%);  width:100%;">
-
-								<div class=" checkout text-center">
-			                        <h2>Mwangaza wa Neno F.M</h2>
-			                      
-			                        <p class="text-center"><a href="{{ route('radio')}}" class="btn btn-black py-3 px-4">Listen</a></p>
-		                    	</div>
-		                       
-		                    </div>
-	                  </div>
-	                  
-	                </div>   
-	                <div class="row">
-
-	                  <div style="background-image: url('images/post-29.jpg'); background-size: cover; padding:0;"class="col-md-6 d-flex checkout_v mx-auto">      
-		                    <div style="	background: -webkit-linear-gradient(top, rgba(34,50,188,0.7) 0%, rgba(34,50,188,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-		                    background: linear-gradient(to bottom, rgba(34,50,188,0.9) 0%, rgba(34,50,188,0.2) 100%);  width:100%;">
-
-								<div class=" checkout text-center">
-			                        <h2>E-news</h2>
-			                      
-			                        <p class="text-center"><a href="{{ route('news')}}" class="btn btn-black py-3 px-4">read</a></p>
-		                    	</div>
-		                       
-		                    </div>
-	                  </div>
-	                </div> 
-	            </div>   
-	        </div>
-	    </div>
 
 
 

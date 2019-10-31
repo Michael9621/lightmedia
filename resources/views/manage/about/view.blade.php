@@ -22,33 +22,33 @@
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="card">
                 <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-borderless first">
-                            <thead>
-                                <tr>
-                                    <th>About</th>
-                                    <th>Mission</th>
-                                    <th>Vision</th>
-                                    <th>Core values</th>
-                                    <th>edit</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    @foreach($abouts as $about)
-                                        <td>{{ $about->about }}</td>
-                                        <td>{{ $about->mission }}</td>
-                                        <td>{{ $about->vision }}</td>
-                                        <td>{{ $about->corevalues }}</td>
-                                        <td> <a href="{{ route('edit_about',['id' => $about->id]) }}" class="btn btn-success btn-sm">edit</a></td>
-                                    @endforeach
-                                </tr>                    
-
-                            </tbody>
-                        </table>
-                    </div>
+                    <h3 class="card-title">About us</h3>
+                    <p class="card-text">{{ $about->about}}</p>
                 </div>
             </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Mission</h3>
+                    <p class="card-text">{{ $about->mission}}</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Vision</h3>
+                    <p class="card-text">{{ $about->vision}}</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Core Values</h3>
+                    <p class="card-text">{{ $about->corevalues}}</p>
+                </div>
+            </div>
+
+            <a href="{{ route('edit_about',['id' => $about->id]) }}" class="btn btn-success btn-sm text-center">edit</a>
         </div>
         
     </div>

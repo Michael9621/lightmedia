@@ -14,7 +14,7 @@ class AboutController extends Controller
      */
     public function index()
     {
-       return view('manage.about.view')->with('abouts',About::limit(1)->get());
+       return view('manage.about.view')->with('about',About::first());
     }
 
     /**
@@ -101,6 +101,7 @@ class AboutController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $about = About::find($id);
+        $about->delete();
     }
 }

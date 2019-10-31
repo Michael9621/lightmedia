@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Contact;
+use App\Blog;
 
-class ContactController extends Controller
+class BlogController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view('manage.contacts.view')->with('contact',Contact::first());
+        return view('manage.blog.view')->with('blogs', Blog::all());
     }
 
     /**
@@ -24,7 +24,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        return view('manage.contacts.create');
+        return view('manage.blog.create');
     }
 
     /**
@@ -35,14 +35,19 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        $contact =    Contact::create([
-           
-           'location' => $request->location,
-           'email' => $request->email,
-           'phone' => $request->phone
+        $featured = $request->featured;
+        $featured_new_name = time().$featured->getClientOriginalName();
+        $featured-> move('uploads/csr', $featured_new_name); 
+
+        Blog::create([
+            "title" => $request->title,   
+            "slug" => str_slug($request->title),
+            "featured" => 'uploads/csr/'.$featured_new_name,
+            "posts" => $request->posts
+
         ]);
 
-        return redirect()->back();
+        return redirect()->route('view_csr');
     }
 
     /**
@@ -64,8 +69,8 @@ class ContactController extends Controller
      */
     public function edit($id)
     {
-        $contact=Contact::find($id);
-        return view('manage.contacts.edit')->with('contact', $contact);
+        $blog = Blog::find($id);
+        return view('manage.blog.edit')->with('blog', $blog);
     }
 
     /**
@@ -77,13 +82,21 @@ class ContactController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $contact=Contact::find($id);
-        $contact->location = $request->location;
-        $contact->phone = $request->phone;
-        $contact->email = $request->email;
-        $contact->save();
+        $blog = Blog::find($id);
 
-        return redirect()->route('view_contact');
+        if ($request->hasFile('featured')){
+            $featured= $request->featured;
+            $featured_new_name = time() . $featured->getClientOriginalName();
+            $featured->move('uploads/csr', $featured_new_name);
+            $event->featured = 'uploads/csr/'.$featured_new_name;
+        }
+
+        $blog->title = $request->title;
+        $blog->slug = str_slug($request->title);
+        $blog->posts = $request->posts;
+        $blog->save();
+
+        return redirect()->route('view_csr');
     }
 
     /**
@@ -94,8 +107,8 @@ class ContactController extends Controller
      */
     public function destroy($id)
     {
-        $contact = Contact::find($id);
-
-        dd($contact->location);
+        $blog = Blog::find($id);
+        $blog->delete();
+        return redirect()->route('view_csr');
     }
 }

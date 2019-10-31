@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Career;
+use Carbon\Carbon;
 
 class CareerController extends Controller
 {
@@ -13,7 +15,7 @@ class CareerController extends Controller
      */
     public function index()
     {
-        //
+        return view('manage.careers.view')->with('careers', Career::all());
     }
 
     /**
@@ -23,7 +25,7 @@ class CareerController extends Controller
      */
     public function create()
     {
-        //
+        return view('manage.careers.create');
     }
 
     /**
@@ -34,7 +36,16 @@ class CareerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $career =    Career::create([
+           
+           'title' => $request->title,
+           'deadline' => Carbon::parse($request->deadline),
+           'description' => $request->description,
+           'responsibilities' => $request->responsibilities,
+           'skills'=> $request->skills
+        ]);
+
+        return redirect()->route('view_careers');
     }
 
     /**
