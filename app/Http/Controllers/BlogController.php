@@ -88,7 +88,7 @@ class BlogController extends Controller
             $featured= $request->featured;
             $featured_new_name = time() . $featured->getClientOriginalName();
             $featured->move('uploads/csr', $featured_new_name);
-            $event->featured = 'uploads/csr/'.$featured_new_name;
+            $blog->featured = 'uploads/csr/'.$featured_new_name;
         }
 
         $blog->title = $request->title;

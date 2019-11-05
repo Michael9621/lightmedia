@@ -18,7 +18,7 @@ class CreateBlogsTable extends Migration
             $table->string('title');
             $table->string('slug');
             $table->string('featured');
-            $table->text('posts');
+            $table->longText('posts');
             $table->timestamps();
         });
     }

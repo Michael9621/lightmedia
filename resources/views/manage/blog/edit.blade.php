@@ -35,7 +35,7 @@
 
                                         <div class="form-group">
                                         	<label for="inputText3" class="col-form-label">enter featured image</label>
-                                            <input id="inputText3" type="file" name="featured" class="form-control" >
+                                            <input id="inputText3" type="file" name="featured" class="form-control" value="{{$blog->featured }}">
                                         </div>
 
                                        	<label for="inputText3" class="col-form-label">write posts</label>
