@@ -12,10 +12,7 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto"> 
 	        	<li class="nav-item active"><a href="{{ route('home')}}" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="{{ route('about')}}" class="nav-link">about us</a></li>
-	        	<li class="nav-item"><a href="{{ route('csr')}}" class="nav-link">CSR</a></li>
-	        	<li class="nav-item"><a href="{{ route('careers')}}" class="nav-link">careers</a></li>
-	          <li class="nav-item"><a href="{{ route('contact')}}" class="nav-link">Contact us</a></li>
+	        	
 	        </ul>
 	      </div>
 	    </div>
@@ -44,28 +41,6 @@
 	      </div>
 	    </div>
 
-	       <div class="sermons-content-area sermons-p">
-        <div class="container">
-            <div class="col-12">
-                <div class=" heading-section text-center ftco-animate">
-                  <h2 class="mb-4">check us out</h2>
-                </div>
-                
-                <div class="row">  
-                	<div class="col-md-6">
-		                <div class="sermons-text text-center banner" style="background-image: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?'); height:300px;">
-		                </div>
-	            	</div>
-	            	<div class="col-md-6">
-		                <div class="sermons-text text-center banner "  style="background-image: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?'); height:300px ;">
-		                </div>
-	            	</div>
-                </div>
-                     
-            </div>   
-        </div>
-        
-    </div>
 
 
 
