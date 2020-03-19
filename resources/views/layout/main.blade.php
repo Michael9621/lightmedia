@@ -34,7 +34,84 @@
     
     @yield('content')
 
-   
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Mwangaza wa Neno Media.</h2>
+              <p>Mwanganza wa Neno is a media group that exists soely to spread the word of God to all</p>
+
+            </div>
+          </div>
+         
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="{{ route('home') }}" class="py-2 d-block">Home</a></li>
+                <li><a href="https://mwangazatv.co.ke/" class="py-2 d-block">T.V</a></li>
+                <li><a href="https://mwangazawanenofm.co.ke/" class="py-2 d-block">Radio</a></li>
+                <li><a href="{{ route('about') }}" class="py-2 d-block">About us</a></li>
+
+               
+            </div>
+          </div>
+           <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="{{ route('csr') }}" class="py-2 d-block">social responsibility</a></li>
+                <li><a href="{{ route('careers') }}" class="py-2 d-block">Careers</a></li>
+                <li><a href="{{ route('contact') }}" class="py-2 d-block">Contact us</a></li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Reach us</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon icon-map-marker"></span><span class="text">Jewel Complex, opposite TRM 6th Floor</span></li>
+                  <li><a href="#"><span class="icon icon-phone"></span><span class="text">not available</span></a></li>
+                  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@mwangazamedia.com</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!--<div class="ftco-footer-widget">
+            <ul class="ftco-footer-social list-unstyled text-center mt-5">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-youtube"></span></a></li>
+            </ul>
+          </div>-->
+
+        <div class="row">
+          <div class="col-md-6">
+
+            <p class="p-4">
+              <a href="#" ></a> All rights reserved &copy; <script>document.write(new Date().getFullYear());</script>  
+             </p>
+          </div>
+          <div class="col-md-6">
+            <div class="ftco-footer-widget">
+            <p><ul class="ftco-footer-social list-unstyled text-center">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-youtube"></span></a></li>
+            </ul></p>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    
   
 
   <!-- loader -->

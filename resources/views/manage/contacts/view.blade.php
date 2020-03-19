@@ -33,7 +33,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @if(count($contact) > 0)
+                                @if($contact->count() > 0)
                                     <tr>
                                         <td>{{ $contact->location }}</td>
                                         <td>{{ $contact->phone }}</td>

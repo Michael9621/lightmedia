@@ -28,17 +28,12 @@
 	
 	
 
-<div class="hero-wrap" style="background-image: url('images/studio.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap screens" style="background-image: url('images/studio.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+        <div class="row no-gutters slider-text  justify-content-end" data-scrollax-parent="true">
           <div class="col-md-11 order-md-last ftco-animate mt-5 text-center" data-scrollax=" properties: { translateY: '70%' }">
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Careers</h1>    
-          </div>
-          <div class="col-md=1 d-none d-md-block">
-            <div class="play-video pb-5 d-flex align-items-center">
-              <p><a href="https://vimeo.com/45830194" class="popup-vimeo"><span class="icon"><i class="ion-ios-play "></i></span> <span class="play">Play video</span></a></p>
-            </div>
           </div>
         </div>
       </div>
@@ -50,24 +45,37 @@
                 <div class=" heading-section text-center ftco-animate">
                   <h2 class="mb-4">Latest jobs</h2>
                 </div>
-                     
-                    <div class="sermons-text text-center">
-                        <h2>Mwangaza TV</h2>
-                        <div class="sermons-meta-data d-flex flex-wrap justify-content-center">
- 
-                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> March 10 on <span>9:00 am - 11:00 am</span></p>
-                        </div>
-                        <div class="sermons-cata">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Video"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Audio"><i class="fa fa-headphones" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Docs"><i class="fa fa-file" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
-                        </div>
-                        <p class="d-flex">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassin.</p>
-                        <p class="text-center"><a href="#" class="btn btn-black py-3 px-4">apply</a></p>
+                    @if($careers->count() > 0)
+                      @foreach($careers as $career)
+                      <div class="sermons-text text-center mb-4">
+                          <h2>{{ $career->title }}</h2>
+                          <div class="sermons-meta-data d-flex flex-wrap justify-content-center">
+  
+                              <p><i class="fa fa-clock-o" aria-hidden="true"></i> <span>{{ $career->deadline }}</span></p>
+                          </div>
+                          
+                          <h4>description</h4>
+                          <p class="text-center">{{ $career->description }}</p>
 
+                          <h4>responsibilities</h4>
+                          <p class="text-center">{{ $career->responsibilities }}</p>
+
+                          <h4>skills</h4>
+                          <p class="text-center">{{ $career->skills }}</p>
+
+                          <p class="text-center"><a href="#" class="btn btn-black py-3 px-4">apply</a></p>
+
+
+                      </div>
+                      @endforeach
+                    @else
+                    <div class="sermons-text text-center">
+                       
+                        <p class="text-center p-5"> no jobs at the moment </p>
+                    
 
                     </div>
+                    @endif
                      
             </div>   
         </div>

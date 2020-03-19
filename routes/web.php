@@ -37,26 +37,15 @@ Route::get('/delete_csr/{id}', 'BlogController@destroy')->name('delete_csr');
 
 
 //common
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', 'FrontEndController@index')->name('home');
 
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
+Route::get('/about', 'FrontEndController@about')->name('about');
 
-Route::get('/csr', function () {
-    return view('csr');
-})->name('csr');
+Route::get('/careers', 'FrontEndController@careers')->name('careers');
 
+Route::get('/contactus', 'FrontEndController@contactus')->name('contact');
 
-Route::get('/careers', function () {
-    return view('careers');
-})->name('careers');
-
-Route::get('/contactus', function () {
-    return view('contact');
-})->name('contact');
+Route::get('/csr', 'FrontEndController@csr')->name('csr');
 
 Route::get('/tv', function () {
     return view('tv');

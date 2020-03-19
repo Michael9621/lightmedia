@@ -23,32 +23,32 @@
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title">About us</h3>
-                    <p class="card-text">{{ $about->about}}</p>
+                    <p class="card-text">{{ $about = null ?$about->about:"nothing to show" }}</p>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title">Mission</h3>
-                    <p class="card-text">{{ $about->mission}}</p>
+                    <p class="card-text">{{ $about = null ?$about->mission:"nothing to show" }}</p>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title">Vision</h3>
-                    <p class="card-text">{{ $about->vision}}</p>
+                    <p class="card-text">{{ $about = null ?$about->vision:"nothing to show" }}</p>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title">Core Values</h3>
-                    <p class="card-text">{{ $about->corevalues}}</p>
+                    <p class="card-text">{{ $about->count() > 0  ?$about->corevalues:"nothing to show" }}</p>
                 </div>
             </div>
 
-            <a href="{{ route('edit_about',['id' => $about->id]) }}" class="btn btn-success btn-sm text-center">edit</a>
+            <a href="{{ route('edit_about',['id' => $about = null ?$about->id:"#"]) }}" class="btn btn-success btn-sm text-center">edit</a>
         </div>
         
     </div>

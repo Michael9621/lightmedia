@@ -12,7 +12,10 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto"> 
 	        	<li class="nav-item active"><a href="{{ route('home')}}" class="nav-link">Home</a></li>
-	        	
+	        	<li class="nav-item"><a href="{{ route('about')}}" class="nav-link">about us</a></li>
+	        	<li class="nav-item"><a href="{{ route('csr')}}" class="nav-link">CSR</a></li>
+	        	<li class="nav-item"><a href="{{ route('careers')}}" class="nav-link">careers</a></li>
+	          <li class="nav-item"><a href="{{ route('contact')}}" class="nav-link">Contact us</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -22,9 +25,10 @@
 	@endsection
 
 	@section('content')
-		<div class="hero-wrap" style="background-image: url('images/tv.jpg');" data-stellar-background-ratio="0.5">
-		 <div style="	background: -webkit-linear-gradient(top, rgba(34,50,188,0.1) 0%, rgba(34,50,188,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(34,50,188,0.2) 0%, rgba(34,50,188,0.2) 100%);">
+	
+		<div class="hero-wrap" style="background-image: url('images/studio.jpg');" data-stellar-background-ratio="0.5">
+		 <div style="	background: -webkit-linear-gradient(top, rgba(34,50,188,0.4) 0%, rgba(34,50,188,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(34,50,188,0.4) 0%, rgba(34,50,188,0.2) 100%);">
 	      <div class="overlay" style=""></div>
 		      <div class="container">
 		        <div class="row no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
@@ -39,9 +43,49 @@
 		        </div>
 		      </div>
 	      </div>
+		</div>
+      
+
+	    <div class="sermons-content-area sermons-p">
+	        <div class="container">
+	            <div class="col-12">
+	                <div class=" heading-section text-center ftco-animate">
+	                  <h2 class="mb-4">Check us out</h2>
+	                </div>
+	                <div class="row">
+	                  <div class="col-md-6 d-flex">      
+	                    <div class="sermons-text text-center border">
+						<h3><b>Mwangaza TV</b></h3>
+	                        
+	                        <div class="sermons-cata">
+	                            <a href="#" data-toggle="tooltip" data-placement="top" title="facebook"><i class="icon icon-facebook" aria-hidden="true"></i></a>
+	                            <a href="#" data-toggle="tooltip" data-placement="top" title="youtube"><i class="icon icon-youtube" aria-hidden="true"></i></a>
+	                            <a href="#" data-toggle="tooltip" data-placement="top" title="twitter"><i class="icon icon-twitter" aria-hidden="true"></i></a>
+	                            <a href="#" data-toggle="tooltip" data-placement="top" title="instagram"><i class="icon icon-instagram" aria-hidden="true"></i></a>
+	                        </div>
+	                        <p class="text-center">Mwangaza TV is a television station that exists to spread the Love of Christ to all and to bring many unto him</p>
+	                        <p class="text-center"><a href="https://mwangazatv.co.ke/" class="btn btn-black py-3 px-4">watch</a></p>
+	                    </div>
+	                  </div>
+	                  <div class="col-md-6 d-flex">      
+	                    <div class="sermons-text text-center border">
+	                        <h3><b>Mwangaza wa Neno Radio</b></h3>
+	                        
+	                        <div class="sermons-cata">
+							<a href="#" data-toggle="tooltip" data-placement="top" title="facebook"><i class="icon icon-facebook" aria-hidden="true"></i></a>
+	                            <a href="#" data-toggle="tooltip" data-placement="top" title="youtube"><i class="icon icon-youtube" aria-hidden="true"></i></a>
+	                            <a href="#" data-toggle="tooltip" data-placement="top" title="twitter"><i class="icon icon-twitter" aria-hidden="true"></i></a>
+	                            <a href="#" data-toggle="tooltip" data-placement="top" title="instagram"><i class="icon icon-instagram" aria-hidden="true"></i></a>
+	                        </div>
+	                        <p class="text-center">Mwangaza wa neno radio is a radio station whose main goal is to spread the word of God to all</p>
+	                        <p class="text-center"><a href="https://mwangazawanenofm.co.ke/" class="btn btn-black py-3 px-4">Listen</a></p> 
+	                    </div>
+	                  </div>
+	                  
+	                </div>    
+	            </div>   
+	        </div>
 	    </div>
-
-
 
 
 

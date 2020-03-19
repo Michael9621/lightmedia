@@ -43,7 +43,7 @@
                                    @endforeach
                                 @else  
                                 <tr>
-                                   <td>no careers yet</td>
+                                   <td>no posts yet</td>
                                 </tr>
                                 @endif
                             </tbody>
