@@ -4,7 +4,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-          <a class="navbar-brand" href="{{route('radio')}}">Mwangaza<span>radio</span></a>
+          <a class="navbar-brand" href="{{route('radio')}}"> <img style="height:60px; width:100px;" src="images/radiologo.jpg"> </span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
           </button>
@@ -25,23 +25,24 @@
 @section('content')
 
   
-    <div class="hero-wrap tv" style="background-image: url('images/studio.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
-          <div class="col-md-7 order-md-last ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Explore our radio </h1>
-            <p> </p>
+    <div class="hero-wrap tv" style="background-image: url('images/radio.jpg'); " data-stellar-background-ratio="0.5">
+        <div style="  background: -webkit-linear-gradient(top, rgba(34,50,188,0.2) 0%, rgba(34,50,188,0.3) 0%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(34,50,188,0.3) 0%, rgba(34,50,188,0.2) 0%)">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+              <div class="col-md-7 order-md-last ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
+                <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Listen live</h1>
+                <p><audio preload="none" controls id="audio1">
+                  <source src="http://listen.radionomy.com/powerofworshipradio" type="audio/mpeg" />
+                </audio></p>
+              </div>
+              <div class="col-md-5 order-md-last ftco-animate mt-5" data-scrollax=" " class="btn btn-black py-3 px-4">
+              </div>
+             
+            </div>
           </div>
-          <div class="col-md-5 order-md-last ftco-animate mt-5" data-scrollax=" " class="btn btn-black py-3 px-4">
-              <h1>Listen live :)</h1>
-              <p><audio preload="none" controls id="audio1">
-              <source src="http://listen.radionomy.com/powerofworshipradio" type="audio/mpeg" />
-            </audio></p>
-          </div>
-         
         </div>
-      </div>
     </div>
 
 

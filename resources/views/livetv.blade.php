@@ -5,7 +5,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" style="background:black !important; margin-top:-20px; color:white;">
 	    <div class="container">
-	      <a class="navbar-brand" href="{{ route('tv')}}">Mwangaza<span>T.V</span></a>
+	      <a class="navbar-brand" href="{{ route('tv')}}"><img style="height:50px; width:100px;" src="images/tvlogo.jpg"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -27,7 +27,7 @@
 
 
 	@section('content')
-		<div class="container" style="padding: 100px 50px; box-sizing: border-box;" >
-		 	<iframe  style="width: 85vw; height:60vh;"src="https://www.youtube.com/embed/BbDF_GXBmGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div  class="container y-frame" style="padding: 100px 0px; box-sizing: border-box;" >
+		 	<iframe  class="embed-responsive" style="height: 450px;" src="https://www.youtube.com/embed/BbDF_GXBmGc?rel=0&controls=1&showinfo=0&autoplay=1&modestbranding=1" frameborder="0"  allowfullscreen></iframe>
 		</div>
 	@endsection

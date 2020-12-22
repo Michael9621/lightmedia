@@ -5,7 +5,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="{{ route('tv')}}">Mwangaza<span>T.V</span></a>
+	      <a class="navbar-brand" href="{{ route('tv')}}"><img style="height:50px; width:100px;" src="images/tvlogo.jpg"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -31,19 +31,22 @@
 
 
 
-    <div class="hero-wrap tv" style="background-image: url('images/studio.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
-          <div class="col-md-7 order-md-last ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Explore our tv shows</h1>
-            <p><a href="{{ route('livetv')}}" class="btn btn-black py-3 px-4">watch live</a></p>
-          </div>
-         <div class="col-md-5 order-md-last ftco-animate mt-5" data-scrollax=" " class="btn btn-black py-3 px-4">
-          </div>
-         
-        </div>
-      </div>
+    <div class="hero-wrap tv" style="background-image: url('images/tv.jpg');" data-stellar-background-ratio="0.5">
+	    <div style="  background: -webkit-linear-gradient(top, rgba(34,50,188,0.2) 0%, rgba(34,50,188,0.3) 0%); /* Chrome10-25,Safari5.1-6 */
+  			background: linear-gradient(to bottom, rgba(34,50,188,0.3) 0%, rgba(34,50,188,0.2) 0%)">  
+	      <div class="overlay"></div>
+	      <div class="container">
+		        <div class="row no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+		          <div class="col-md-7 order-md-last ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
+		            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Explore our tv shows</h1>
+		            <p><a href="{{ route('livetv')}}" class="btn btn-black py-3 px-4">watch live</a></p>
+		          </div>
+		         <div class="col-md-5 order-md-last ftco-animate mt-5" data-scrollax=" " class="btn btn-black py-3 px-4">
+		          </div>
+		         
+		        </div>
+	      </div>
+	    </div>
     </div>
 
 
